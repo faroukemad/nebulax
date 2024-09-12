@@ -2,8 +2,8 @@ import React from 'react'
 
 export default function PageoneDots() {
     return (
-        <>
-            <img src="./assets/dots.jpg" alt="" className='pageone-dots' />
+        <> 
+            <img src={`${process.env.PUBLIC_URL}/assets/dots.jpg`} alt="" className='pageone-dots' />
         </>
     )
 }

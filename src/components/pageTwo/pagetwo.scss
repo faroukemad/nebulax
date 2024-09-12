@@ -48,22 +48,22 @@
 .pagetwo-switch{
     margin-top: 30px;
 }
-:where(.css-dev-only-do-not-override-qnu6hi).ant-switch {
+:where(.css-dev-only-do-not-override-qnu6hi).ant-switch ,:where(.css-qnu6hi).ant-switch.ant-switch-checked {
     background: linear-gradient(90deg, rgba(158,67,255,1) 0%, rgba(116,65,255,1) 50%) !important;
 }
-:where(.css-dev-only-do-not-override-qnu6hi).ant-switch.ant-switch-checked {
+:where(.css-dev-only-do-not-override-qnu6hi).ant-switch.ant-switch-checked ,:where(.css-qnu6hi).ant-switch.ant-switch-checked{
     background: linear-gradient(90deg, rgba(158,67,255,1) 0%, rgba(116,65,255,1) 50%) !important;
 }
-:where(.css-dev-only-do-not-override-qnu6hi).ant-switch:hover:not(.ant-switch-disabled) {
+:where(.css-dev-only-do-not-override-qnu6hi).ant-switch:hover:not(.ant-switch-disabled) ,:where(.css-qnu6hi).ant-switch:hover:not(.ant-switch-disabled) {
     background: linear-gradient(90deg, rgba(158,67,255,1) 0%, rgba(116,65,255,1) 50%) !important;
 }
 .ant-switch-inner-checked{
     padding: 0.5rem 1.5rem;
 }
-:where(.css-dev-only-do-not-override-qnu6hi).ant-switch.ant-switch-checked .ant-switch-handle {
+:where(.css-dev-only-do-not-override-qnu6hi).ant-switch.ant-switch-checked .ant-switch-handle ,:where(.css-qnu6hi).ant-switch.ant-switch-checked .ant-switch-handle {
     inset-inline-start: calc(100% - 30px);
 }
-:where(.css-dev-only-do-not-override-qnu6hi).ant-switch .ant-switch-handle {
+:where(.css-dev-only-do-not-override-qnu6hi).ant-switch .ant-switch-handle ,:where(.css-qnu6hi).ant-switch .ant-switch-handle{
     position: absolute;
     top: 10%;
     left: 0;
@@ -73,17 +73,17 @@
     border-radius: 50%;
     transition: all 0.2s ease-in-out;
 }
-:where(.css-dev-only-do-not-override-qnu6hi).ant-switch {
+:where(.css-dev-only-do-not-override-qnu6hi).ant-switch ,:where(.css-qnu6hi).ant-switch {
     height: 35px;
 }
-:where(.css-dev-only-do-not-override-qnu6hi).ant-switch .ant-switch-handle {
+:where(.css-dev-only-do-not-override-qnu6hi).ant-switch .ant-switch-handle ,:where(.css-qnu6hi).ant-switch .ant-switch-handle{
   
     left: 2%;}
 
     .ant-switch-handle{
         overflow: hidden;
     }
-    :where(.css-dev-only-do-not-override-qnu6hi).ant-switch .ant-switch-inner .ant-switch-inner-unchecked {
+    :where(.css-dev-only-do-not-override-qnu6hi).ant-switch .ant-switch-inner .ant-switch-inner-unchecked ,:where(.css-qnu6hi).ant-switch .ant-switch-inner .ant-switch-inner-unchecked {
         margin-top: -30px;
     }
     .ant-switch-handle{
@@ -92,7 +92,7 @@
         background-repeat: no-repeat;
         background-position: center;
     }
-    :where(.css-dev-only-do-not-override-qnu6hi).ant-switch .ant-switch-handle::before {
+    :where(.css-dev-only-do-not-override-qnu6hi).ant-switch .ant-switch-handle::before ,:where(.css-qnu6hi).ant-switch .ant-switch-handle::before {
         background-color: transparent;
     }
 
