@@ -1,0 +1,197 @@
+.pagefive {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow-x: hidden;
+    margin-top: 50px;
+}
+
+.pagefive-container {
+    width: 100%;
+    height: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagefive-left {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+
+.pagefive-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+
+    align-items: center;
+    padding: 1.5rem;
+
+    width: 500px;
+}
+
+.pagefive-write {
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.pagefive-btn {
+    margin-top: 30px;
+    color: white;
+    background: linear-gradient(90deg, rgba(158, 67, 255, 1) 0%, rgba(116, 65, 255, 1) 50%);
+    border: none;
+    border-radius: 15px;
+    padding: .75rem 2rem;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.pagefive-input {
+    background-color: #f6f6f6;
+    margin-top: 25px;
+    border: none;
+    border-radius: 15px;
+    width: 80%;
+    padding: .5rem 1rem;
+}
+
+.pagefive-textarea {
+    @extend .pagefive-input;
+    height: 100px;
+    resize: none;
+}
+
+.pagefive-right {
+    position: relative;
+    overflow: hidden;
+
+    .pagefive-send {
+        width: 400px;
+        z-index: 10;
+        position: relative;
+    }
+}
+
+.pagefive-blob {
+    position: absolute;
+    right: -100px;
+    top: -150px;
+    width: 500px;
+    height: 600px;
+
+    object-fit: fill;
+}
+.p-input-icon-left{
+    width: 80%;
+    margin-top: 25px;
+}
+.pagefive-input2{
+    background-color: #f6f6f6;
+   
+    border: none;
+    border-radius: 15px;
+    width: 100%;
+    padding: .5rem 1rem;
+    padding-left: 35px;
+    &::placeholder{
+        font-size: 13px;
+        
+    }
+}
+.pi-envelope{
+    top: 13px;
+    left: 10px  ;
+}
+.pi-comments{
+   top: 10px;
+   left: 10px
+}
+.pagefive-input3{
+    @extend .pagefive-input2;
+    height: 100%;
+    resize: none;
+}
+.pagefive-area{
+    height: 100px;
+}
+.error{
+    color: red;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+$width: 662px;
+
+$width2: 1050px;
+@media (max-width: #{$width}) {
+    .p-input-icon-left {
+    width: 100%;
+    }
+    .pagefive {
+        margin-top: 50px;
+    }
+
+    .pagefive-container {
+        flex-direction: column;
+        padding: 0 3rem;
+        padding-top: 30px;
+    }
+
+    .pagefive-right .pagefive-send {
+        width: 100%;
+    }
+
+    .pagefive-card {
+        width: 100%;
+    }
+
+    .pagefive-left {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .pagefive-blob {
+        right: 0;
+        width: 100%;
+    }
+    .pagefive-input, .pagefive-textarea{
+        width: 100%;
+        font-size: 13px;
+    }
+    .pagefive-card{
+        padding: 1.5rem;
+    }
+    .pagefive-btn{
+        font-size: 13px;
+
+    }
+    
+}
+
+@media (min-width: #{$width}) and (max-width: #{$width2}) {
+    .pagefive-blob{
+        width: 100%;
+        right: 0;
+    }
+    .pagefive-right .pagefive-send{
+        width: 250px;
+    }
+    .pagefive-card{
+        width: 300px;
+    }
+    .pagefive-input, .pagefive-textarea{
+        width: 100%;
+    }
+    .pagefive-container{gap: 50px; width: 80%;}
+    .pagefive-btn{
+        padding: .5rem 1rem;
+        font-size: 13px;
+    }
+}

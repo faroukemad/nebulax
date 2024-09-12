@@ -1,0 +1,84 @@
+.pagefour{
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center; max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    overflow-x: hidden;
+    margin-top: 50px;
+}
+.pagefour-container{
+    width: 100%;
+    height: 100%;
+    padding: 1rem 3rem;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+
+}
+.pagefour-we{
+    color: #f9de93;
+}
+.pagefour-sell{
+    font-size: 50px;
+    font-weight: 600;
+    color: #333333;
+    margin-top: 20px;
+    p{
+        @extend .pagefour-sell;
+        margin-top: 0;
+    }
+}
+.pagefour-guide{
+    color: #666666;
+    margin-top: 20px;
+}
+.pagefour-right{
+    overflow: hidden;
+    img{
+        width: 500px;
+        height: 500px;
+        object-fit: contain;
+    }
+}
+.pagefive-left{
+    border-radius: 15px;
+}
+$width: 662px;
+
+$width2: 1050px;
+@media (max-width: #{$width}) {
+   .pagefour{
+    margin-top: 50px;
+   }
+   .pagefour-container{
+    flex-direction: column;
+    gap: 0;
+   }
+   .pagefour-right img{
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+   }
+   .pagefour-sell{
+    font-size: 30px;
+   }
+   .pagefour-we{
+    text-align: center;
+   }
+   .pagefour-sell, .pagefour-sell p{
+    text-align: center;
+   }
+   .pagefour-guide{
+    text-align: center;
+   }
+}
+@media (min-width: #{$width}) and (max-width: #{$width2}) {
+    .pagefour-right img{
+        width: 300px;
+    }
+}
